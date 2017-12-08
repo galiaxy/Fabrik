@@ -658,7 +658,4 @@ def import_prototxt(request):
             net[id] = jsonLayer
             i = i + 1
 
-        for key in sorted(net.keys()):
-            print net[key]
-
         return JsonResponse({'result': 'success', 'net': net, 'net_name': net_name})
