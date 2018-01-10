@@ -10,6 +10,8 @@ class ModelZoo extends React.Component {
             <h3 className="zoo-modal-text">Recognition</h3>
               <ModelElement importNet={this.props.importNet} framework="caffe" id="lenet">MNIST LeNet</ModelElement>
               <br/>
+              <ModelElement importNet={this.props.importNet} framework="caffe" id="cifar10_full">Cifar10 CNN</ModelElement>
+              <br/>
               <ModelElement importNet={this.props.importNet} framework="caffe" id="alexnet">AlexNet</ModelElement>
               <br/>
               <ModelElement importNet={this.props.importNet} framework="caffe" id="All_CNN">All CNN</ModelElement>
@@ -25,6 +27,10 @@ class ModelZoo extends React.Component {
               <ModelElement importNet={this.props.importNet} framework="keras" id="v3">Inception V3</ModelElement>
               <br/>
               <ModelElement importNet={this.props.importNet} framework="caffe" id="Squeezenet">Squeezenet</ModelElement>
+              <br/>
+              <ModelElement importNet={this.props.importNet} framework="caffe" id="SENet">SENet</ModelElement>
+              <br/>
+              <ModelElement importNet={this.props.importNet} framework="keras" id="imdb_cnn_lstm">IMDB CNN LSTM</ModelElement>
               <br/>
               <ModelElement importNet={this.props.importNet} framework="caffe" id="deepyeast">DeepYeast</ModelElement>
           </div>
@@ -45,6 +51,8 @@ class ModelZoo extends React.Component {
               <ModelElement importNet={this.props.importNet} framework="keras" id="textGeneration">Text Generation</ModelElement>
               <br/>
               <ModelElement importNet={this.props.importNet} framework="keras" id="seq2seq_lang">Seq2Seq Translation</ModelElement>
+              <br/>
+              <ModelElement importNet={this.props.importNet} framework="caffe" id="pix2pix">Pix2Pix</ModelElement>
           </div>
           <div className="zoo-modal-model">
             <h3 className="zoo-modal-text">Caption</h3>
@@ -55,6 +63,8 @@ class ModelZoo extends React.Component {
           <div className="zoo-modal-model">
             <h3 className="zoo-modal-text">VQA</h3>
             <ModelElement importNet={this.props.importNet} framework="keras" id="VQA">VQA</ModelElement>
+            <br/>
+            <ModelElement importNet={this.props.importNet} framework="keras" id="VQA2">VQA2</ModelElement>
           </div>
         </div>
       </div>
